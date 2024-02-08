@@ -1,0 +1,170 @@
+[
+    {
+        "id": 1,
+        "name": "Elena Cruz",
+        "address": "123 Main St, Suite 101, Anytown, CA 12345, USA",
+        "specialty": "Surveillance and Background Checks",
+        "description": "Elena Cruz is a seasoned investigator with a keen eye for detail. She specializes in discreet surveillance and thorough background checks, providing comprehensive reports for her clients.",
+        "profilePhotoUrl": "assets/pi-photos/woman#1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Jack Davidson",
+        "address": "456 Elm St, Apt 202, Metro City, NY 54321, USA",
+        "specialty": "Missing Persons and Cold Cases",
+        "description": "Jack Davidson has a knack for solving the unsolvable. With a background in law enforcement, he excels in finding missing persons and unraveling cold cases that others have given up on.",
+        "profilePhotoUrl": "assets/pi-photos/man#1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Samantha Reed",
+        "address": "789 Oak Ave, Suite B, Smalltown, TX 67890, USA",
+        "specialty": "Corporate Espionage and Fraud",
+        "description": "Samantha Reed is an expert in corporate espionage and fraud investigation. She has a sharp mind and a vast network of informants, making her the go-to PI for businesses facing internal threats.",
+        "profilePhotoUrl": "assets/pi-photos/woman#2.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Max Thompson",
+        "address": "321 Maple Ln, Unit 10, Riverside, CA 54321, USA",
+        "specialty": "Insurance Fraud and Claims Investigation",
+        "description": "Max Thompson is a former insurance claims adjuster turned private investigator. His insider knowledge of the industry allows him to uncover fraudulent claims swiftly and efficiently, saving insurance companies millions.",
+        "profilePhotoUrl": "assets/pi-photos/man#2.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Rachel Patel",
+        "address": "567 Pine St, Suite 300, Downtown, NY 12345, USA",
+        "specialty": "Cybersecurity and Digital Forensics",
+        "description": "Rachel Patel is at the forefront of cybersecurity and digital forensics. With a background in computer science, she helps individuals and businesses protect their digital assets and recover crucial evidence.",
+        "profilePhotoUrl": "assets/pi-photos/woman#3.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Tom Walker",
+        "address": "890 Cedar Ave, Apartment 15C, City Heights, CA 67890, USA",
+        "specialty": "Infidelity Investigations",
+        "description": "Tom Walker specializes in discreetly uncovering infidelity. With a blend of technology and street smarts, he helps clients uncover the truth about their partners, providing closure and peace of mind.",
+        "profilePhotoUrl": "assets/pi-photos/man#3.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Emily Carter",
+        "address": "432 Walnut St, Suite 501, Metroville, NY 54321, USA",
+        "specialty": "White Collar Crime",
+        "description": "Emily Carter is a tenacious investigator with a focus on white-collar crime. She meticulously follows the money trail, leaving no stone unturned in her pursuit of justice for her clients.",
+        "profilePhotoUrl": "assets/pi-photos/woman#4.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Mark Robinson",
+        "address": "765 Birch Rd, Unit 22B, Lakeside, CA 12345, USA",
+        "specialty": "Undercover Operations",
+        "description": "Mark Robinson is a master of undercover operations. With his ability to blend in seamlessly, he infiltrates even the most secretive organizations to gather intel and expose illicit activities.",
+        "profilePhotoUrl": "assets/pi-photos/man#4.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Grace Sanchez",
+        "address": "876 Cherry Ave, Suite 105, Rivertown, TX 67890, USA",
+        "specialty": "Child Custody and Family Law",
+        "description": "Grace Sanchez specializes in child custody and family law investigations. With empathy and determination, she uncovers crucial evidence to support her clients in legal battles for custody.",
+        "profilePhotoUrl": "assets/pi-photos/woman#5.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Daniel Miller",
+        "address": "987 Oak St, Apartment 3D, Hillside, CA 54321, USA",
+        "specialty": "Forensic Accounting",
+        "description": "Daniel Miller is a forensic accountant turned private investigator. With a sharp eye for numbers and a deep understanding of financial systems, he uncovers embezzlement and financial fraud with ease.",
+        "profilePhotoUrl": "assets/pi-photos/man#5.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Sophie Adams",
+        "address": "543 Elm St, Suite 201, Harbor City, NY 12345, USA",
+        "specialty": "Stalker and Harassment Investigations",
+        "description": "Sophie Adams specializes in stalker and harassment investigations. With her expertise in threat assessment and risk management, she provides safety solutions for individuals facing persistent threats.",
+        "profilePhotoUrl": "assets/pi-photos/woman#6.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Nathan Stewart",
+        "address": "210 Cedar Ave, Apartment 7B, Mountainview, TX 67890, USA",
+        "specialty": "Cold Case Homicide",
+        "description": "Nathan Stewart is a dedicated investigator focused on solving cold case homicides. With meticulous attention to detail and advanced forensic techniques, he brings closure to families and justice to victims.",
+        "profilePhotoUrl": "assets/pi-photos/man#6.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Olivia Garcia",
+        "address": "876 Maple St, Suite 401, Lakeshore, CA 12345, USA",
+        "specialty": "Undercover Surveillance",
+        "description": "Olivia Garcia is an expert in undercover surveillance. With her ability to blend into any environment, she gathers critical evidence for her clients without raising suspicion.",
+        "profilePhotoUrl": "assets/pi-photos/woman#7.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Ryan Turner",
+        "address": "543 Oak St, Apartment 12E, Riverdale, NY 54321, USA",
+        "specialty": "Missing Persons and Runaways",
+        "description": "Ryan Turner specializes in locating missing persons and runaways. With a compassionate approach and extensive resources, he reunites families and provides support for those in need.",
+        "profilePhotoUrl": "assets/pi-photos/man#7.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Emma White",
+        "address": "210 Cedar Ave, Suite 501, Hilltop, CA 54321, USA",
+        "specialty": "Corporate Investigations",
+        "description": "Emma White handles complex corporate investigations with finesse. With a background in corporate law, she uncovers fraud, corruption, and intellectual property theft, protecting her clients' interests.",
+        "profilePhotoUrl": "assets/pi-photos/woman#8.jpg"
+    },
+    {
+        "id": 16,
+        "name": "David Carter",
+        "address": "987 Elm St, Apartment 6C, Skyline, NY 12345, USA",
+        "specialty": "Background Checks and Due Diligence",
+        "description": "David Carter provides thorough background checks and due diligence services. With access to extensive databases and meticulous research skills, he helps clients make informed decisions.",
+        "profilePhotoUrl": "assets/pi-photos/man#8.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Lily Johnson",
+        "address": "654 Cedar St, Suite 301, Seaview, TX 67890, USA",
+        "specialty": "Surveillance and Counter-Surveillance",
+        "description": "Lily Johnson specializes in surveillance and counter-surveillance techniques. With advanced training in electronic countermeasures, she protects clients from corporate espionage and privacy breaches.",
+        "profilePhotoUrl": "assets/pi-photos/woman#9.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Michael Adams",
+        "address": "543 Pine St, Apartment 8A, Sunset, CA 12345, USA",
+        "specialty": "Financial Fraud Investigations",
+        "description": "Michael Adams is a seasoned investigator focused on financial fraud. With a background in forensic accounting, he uncovers embezzlement schemes and Ponzi schemes, helping clients recover their assets.",
+        "profilePhotoUrl": "assets/pi-photos/man#9.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Sophia Clark",
+        "address": "876 Oak St, Suite 201, Greenfield, NY 12345, USA",
+        "specialty": "Insurance Claims Investigations",
+        "description": "Sophia Clark specializes in insurance claims investigations. With a blend of analytical skills and field experience, she verifies the legitimacy of claims, saving insurance companies from fraudulent payouts.",
+        "profilePhotoUrl": "assets/pi-photos/woman#10.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Benjamin Wright",
+        "address": "543 Maple St, Suite 401, Hillcrest, CA 54321, USA",
+        "specialty": "Background Investigations for Employment",
+        "description": "Benjamin Wright conducts comprehensive background investigations for employment purposes. With a focus on due diligence, he ensures that companies hire trustworthy and reliable candidates.",
+        "profilePhotoUrl": "assets/pi-photos/man#10.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Isabella Martinez",
+        "address": "765 Cedar St, Apartment 10D, Lakeside, TX 67890, USA",
+        "specialty": "Asset Search and Recovery",
+        "description": "Isabella Martinez specializes in asset search and recovery. With her expertise in financial analysis and legal procedures, she assists clients in locating and reclaiming hidden assets.",
+        "profilePhotoUrl": "assets/pi-photos/woman#11.jpg"
+    }
+]
