@@ -5,7 +5,7 @@
     display: flex;
     background-color: #26453E;
     color: #fff;
-    padding: 20px;
+    padding: 20px 24px;
     height: 100px;
     justify-content: space-between;
     position: fixed; 
@@ -38,6 +38,6 @@
 @media (max-width: 768px) {
     .footer {
         text-align: center;
-        flex-direction: column;
+        padding: 20px 24px;
     }
 }
