@@ -2,5 +2,13 @@
     <a [routerLink]="['/']">Home</a>
     <a>Profile</a>
     <a>Search</a>
-    <a>Contact</a>
+    <a (click)="openModal()">Contact</a>
+
+</div>
+
+<div>
+<app-modal [isOpen]="isModalOpen" (closeModal)="onModalClose()">
+    <h2>Modal Title</h2>
+    <p>This is the modal content.</p>
+  </app-modal>
 </div>
