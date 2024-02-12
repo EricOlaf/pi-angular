@@ -28,3 +28,23 @@
   position: relative;
   cursor: pointer;
 }
+
+/* Modal form */
+.modal-contact-form-input{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-style{
+  padding-bottom: 10px;
+}
+.submit-button{
+  border-radius: 22px;
+  background-color:  #26453E;
+  border: #26453E;
+  color: #f5f5dc;
+  height: 25px;
+  width: 65px;
+}
