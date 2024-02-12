@@ -2,11 +2,11 @@
 
 /* Modal Overlay  */
 .modal-overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100px;
-  height: 100px;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -16,6 +16,8 @@
 .modal {
   background-color: #f5f5dc;
   padding: 20px;
-  border-radius: 5px;
+  width: 400px;
+  height: 400px;
+  border-radius: 22px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
