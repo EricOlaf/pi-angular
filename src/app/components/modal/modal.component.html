@@ -1,7 +1,9 @@
 
   <div class="modal-overlay" *ngIf="isOpen" (click)="onClose()">
+   
     <div class="modal" (click)="$event.stopPropagation()">
+      <fa-icon [icon]="faCircleXmark" class="modal-close-button" size="1x"
+      (click)="onClose()"></fa-icon>
       <ng-content></ng-content>
-      <button (click)="onClose()">Close</button>
     </div>
   </div>
