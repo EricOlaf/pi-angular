@@ -33,7 +33,12 @@ export class ModalComponent implements OnInit {
   ngOnInit(): void {}
 
   sendContactInfo():void {
-  console.log("CONTACT FORM SUBMITTED",this.contactForm)
+
+    if (this.contactForm.status === "INVALID"){
+      console.log("CONTACT FORM ERROR please try again")
+    } else {
+      console.log("CONTACT FORM SUBMITTED",this.contactForm)
+    }
   }
 
   onClose(){
