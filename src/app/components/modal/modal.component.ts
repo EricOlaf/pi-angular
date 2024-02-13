@@ -6,7 +6,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-modal',
   standalone: true,
@@ -14,11 +13,12 @@ import { Router } from '@angular/router';
   templateUrl: './modal.component.html',
   styleUrl: './modal.component.css'
 })
+
 export class ModalComponent implements OnInit {
 
   faCircleXmark= faCircleXmark
-  contactForm : FormGroup
-  @Input() isSubmitted : boolean = false 
+  contactForm: FormGroup
+  @Input() isSubmitted: boolean = false 
   @Input() isOpen: boolean = false
   @Output() closeModal = new EventEmitter<void>()
 
@@ -30,7 +30,7 @@ export class ModalComponent implements OnInit {
      })
   }
 
-  ngOnInit(): void {}
+  ngOnInit():void {}
 
   sendContactInfo():void {
     if (this.contactForm.status === "VALID"){

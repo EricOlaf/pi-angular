@@ -2,7 +2,7 @@
   <div class="modal-overlay" *ngIf="isOpen" (click)="onClose()">
     <div class="modal" (click)="$event.stopPropagation()">
       <fa-icon [icon]="faCircleXmark" class="modal-close-button" size="1x" (click)="onClose()"></fa-icon>
-      
+
       <ng-container *ngIf="!isSubmitted else successScreen">
              <h2>Contact Us</h2>
       <p class="modal-cta">Have questions comments or concerns? fill out this form to reach out</p>
