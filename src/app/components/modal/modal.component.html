@@ -3,6 +3,7 @@
     <div class="modal" (click)="$event.stopPropagation()">
       <fa-icon [icon]="faCircleXmark" class="modal-close-button" size="1x" (click)="onClose()"></fa-icon>
       <ng-content></ng-content>
+      <ng-container *ngIf="!isSubmitted else successScreen">
       <form [formGroup]="contactForm" (ngSubmit)="sendContactInfo()">
         <div class="modal-contact-form-input">
           <label class="label-style">Name</label>
@@ -24,5 +25,12 @@
         </div>
            <button class="submit-button" type="submit">Submit</button>
         </form>
+      </ng-container>
+      <ng-template #successScreen >
+        <div class="success-message">
+          <p>Thank you for your submission we will contact you within the next 24 hours.</p>
+          <button class="close-button" (click)="resetForm()">Close</button>
+        </div>
+      </ng-template>
     </div>
   </div>
