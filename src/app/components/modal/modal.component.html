@@ -2,8 +2,10 @@
   <div class="modal-overlay" *ngIf="isOpen" (click)="onClose()">
     <div class="modal" (click)="$event.stopPropagation()">
       <fa-icon [icon]="faCircleXmark" class="modal-close-button" size="1x" (click)="onClose()"></fa-icon>
-      <ng-content></ng-content>
+      
       <ng-container *ngIf="!isSubmitted else successScreen">
+             <h2>Contact Us</h2>
+      <p class="modal-cta">Have questions comments or concerns? fill out this form to reach out</p>
       <form [formGroup]="contactForm" (ngSubmit)="sendContactInfo()">
         <div class="modal-contact-form-input">
           <label class="label-style">Name</label>
@@ -26,11 +28,15 @@
            <button class="submit-button" type="submit">Submit</button>
         </form>
       </ng-container>
-      <ng-template #successScreen >
+      
+      <ng-template #successScreen>
+        <div class="success-message-container">
         <div class="success-message">
-          <p>Thank you for your submission we will contact you within the next 24 hours.</p>
-          <button class="close-button" (click)="resetForm()">Close</button>
+          <h4>Thank you for your submission we will contact you within the next 24 hours.</h4>
         </div>
+        <button class="close-button" (click)="resetForm()">Close</button>
+      </div>
       </ng-template>
+
     </div>
   </div>

@@ -20,7 +20,6 @@ export class ModalComponent implements OnInit {
   contactForm : FormGroup
   @Input() isSubmitted : boolean = false 
   @Input() isOpen: boolean = false
-  
   @Output() closeModal = new EventEmitter<void>()
 
   constructor(private formBuilder: FormBuilder, private routes: Router) {
