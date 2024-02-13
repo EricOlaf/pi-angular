@@ -1,0 +1,43 @@
+
+  <div class="modal-overlay" *ngIf="isOpen" (click)="onClose()">
+    <div class="modal" (click)="$event.stopPropagation()">
+      <fa-icon [icon]="faCircleXmark" class="modal-close-button" size="1x" (click)="onClose()"></fa-icon>
+
+      <ng-container *ngIf="!isSubmitted else successScreen">
+             <h2>Contact Us</h2>
+      <p class="modal-cta">Have questions comments or concerns? fill out this form to reach out</p>
+      <form [formGroup]="contactForm" (ngSubmit)="sendContactInfo()">
+        <div class="modal-contact-form-input">
+          <label class="label-style">Name</label>
+          <input 
+          type="text"
+          formControlName="name"
+          />
+        </div>
+        <div class="modal-contact-form-input">
+          <label class="label-style">Email</label>
+          <input type="text" formControlName="email"/>
+        </div>
+        <div class="modal-contact-form-input">
+          <label class="label-style">Message</label>
+          <textarea 
+          type="text"
+          class="message-style"
+          formControlName="message"
+         ></textarea>
+        </div>
+           <button class="submit-button" type="submit">Submit</button>
+        </form>
+      </ng-container>
+      
+      <ng-template #successScreen>
+        <div class="success-message-container">
+        <div class="success-message">
+          <h4>Thank you for your submission we will contact you within the next 24 hours.</h4>
+        </div>
+        <button class="close-button" (click)="resetForm()">Close</button>
+      </div>
+      </ng-template>
+
+    </div>
+  </div>
