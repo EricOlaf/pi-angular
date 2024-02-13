@@ -17,7 +17,7 @@
   background-color: #f5f5dc;
   padding: 20px;
   width: 400px;
-  height: 425px;
+  height: 525px;
   border-radius: 22px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
@@ -41,6 +41,16 @@
   flex-direction: column;
 }
 
+.message-style{
+  border-radius: 10px;
+  height: 75px;
+}
+input {
+  border-radius: 10px;
+  height: 45px;
+}
+
+
 .label-style{
   padding-bottom: 10px;
 }
@@ -51,8 +61,8 @@
   background-color:  #26453E;
   border: #26453E;
   color: #f5f5dc;
-  height: 25px;
-  width: 65px;
+  height: 35px;
+  width: 85px;
   cursor: pointer;
 }
 
@@ -63,7 +73,6 @@
 }
 
 .close-button {
-
   border-radius: 22px;
   background-color: #26453E;
   border: none;
@@ -72,8 +81,8 @@
   width: 100px;
   cursor: pointer;
   margin-top:250px
-
 }
+
 
 
 .close-button:hover:enabled{
