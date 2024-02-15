@@ -15,6 +15,7 @@ export class FooterComponent {
   openModal(){
     this.isModalOpen = true
   }
+  
   onModalClose() {
     this.isModalOpen = false;
   }
