@@ -1,0 +1,35 @@
+header {
+  width: 100%;
+  padding: 50px;
+  margin: 0 auto;
+  background-color: #26453e;
+  color: #f5f5dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 0.75rem;
+  font-size: 3rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: 4rem 20%;
+}
+
+.list-container {
+  margin: 2rem 0;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
