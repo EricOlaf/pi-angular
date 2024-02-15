@@ -1,4 +1,4 @@
-[
+{"piProfiles":[
     {
         "id": 1,
         "name": "Elena Cruz",
@@ -188,5 +188,5 @@
         "profilePhotoUrl": "assets/pi-photos/woman#11.jpg",
         "rating": 80
     }
-]
+]}
 
