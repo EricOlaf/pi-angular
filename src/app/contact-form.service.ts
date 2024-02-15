@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { FormGroup } from '@angular/forms';
-
 
 export interface PostResponse {
   success: boolean;
@@ -14,13 +12,16 @@ export interface PostResponse {
 })
 
 export class ContactFormService {
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
 
-  private apiUrl = "http://localhost:3000/contactForm"
+  private apiUrl = "http://localhost:3000/contactFormPosts"
 
   constructor(private http: HttpClient) { }
 
-  postContactFormData(formData:FormGroup):Observable<PostResponse>{
-    return this.http.post<PostResponse>(this.apiUrl, formData)
+  postContactFormData(formData:any):Observable<any>{
+    return this.http.post<any>(this.apiUrl, formData)
   }
 
 }

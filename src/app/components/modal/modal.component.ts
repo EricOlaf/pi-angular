@@ -24,7 +24,8 @@ export class ModalComponent implements OnInit {
   @Input() isOpen: boolean = false
   @Output() closeModal = new EventEmitter<void>()
 
-  constructor(private formBuilder: FormBuilder, private routes: Router, private contactFormService:ContactFormService) {
+
+  constructor(private formBuilder: FormBuilder,private contactFormService: ContactFormService,private routes: Router,) {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -35,18 +36,17 @@ export class ModalComponent implements OnInit {
   ngOnInit():void {}
 
   sendContactInfo():void {
-    // if (this.contactForm.status === "VALID"){
-    //   this.isSubmitted = true
-    //   console.log("CONTACT FORM SUBMITTED",this.contactForm)
-    // } else {
-    //   console.log("CONTACT FORM ERROR please try again")
-    // }
-  const data = this.contactForm
+
+  const data = this.contactForm.value
+  const contactFormStatus = this.contactForm.status
    this.contactFormService.postContactFormData(data).subscribe({
-    next: response => {
+    next: (response: any) => {
+      if (contactFormStatus === "VALID"){
+      this.isSubmitted = true
       console.log('Data posted successfully:', response);
+      }
     },
-    error: error => {
+    error: (error: any) => {
       console.error('Error posting data:', error);
     }
   });
