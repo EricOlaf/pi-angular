@@ -5,6 +5,8 @@ import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ContactFormService } from '../../contact-form.service';
+
 
 @Component({
   selector: 'app-modal',
@@ -22,7 +24,8 @@ export class ModalComponent implements OnInit {
   @Input() isOpen: boolean = false
   @Output() closeModal = new EventEmitter<void>()
 
-  constructor(private formBuilder: FormBuilder, private routes: Router) {
+
+  constructor(private formBuilder: FormBuilder,private contactFormService: ContactFormService,private routes: Router,) {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -33,12 +36,20 @@ export class ModalComponent implements OnInit {
   ngOnInit():void {}
 
   sendContactInfo():void {
-    if (this.contactForm.status === "VALID"){
+
+  const data = this.contactForm.value
+  const contactFormStatus = this.contactForm.status
+   this.contactFormService.postContactFormData(data).subscribe({
+    next: (response: any) => {
+      if (contactFormStatus === "VALID"){
       this.isSubmitted = true
-      console.log("CONTACT FORM SUBMITTED",this.contactForm)
-    } else {
-      console.log("CONTACT FORM ERROR please try again")
+      console.log('Data posted successfully:', response);
+      }
+    },
+    error: (error: any) => {
+      console.error('Error posting data:', error);
     }
+  });
   }
 
   onClose(){
