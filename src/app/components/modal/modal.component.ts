@@ -5,7 +5,7 @@ import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ContactFormService } from '../../contact-form.service';
+import { ContactFormResponse, ContactFormService } from '../../contact-form.service';
 
 
 @Component({
@@ -40,13 +40,13 @@ export class ModalComponent implements OnInit {
   const data = this.contactForm.value
   const contactFormStatus = this.contactForm.status
    this.contactFormService.postContactFormData(data).subscribe({
-    next: (response: any) => {
+    next: (response: ContactFormResponse) => {
       if (contactFormStatus === "VALID"){
       this.isSubmitted = true
       console.log('Data posted successfully:', response);
       }
     },
-    error: (error: any) => {
+    error: (error: string) => {
       console.error('Error posting data:', error);
     }
   });

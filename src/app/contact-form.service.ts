@@ -2,9 +2,11 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-export interface PostResponse {
-  success: boolean;
-  message: string;
+export interface ContactFormResponse {
+  id: string
+  name: string
+  email: string
+  message:string
 }
 
 @Injectable({
@@ -20,8 +22,8 @@ export class ContactFormService {
 
   constructor(private http: HttpClient) { }
 
-  postContactFormData(formData:any):Observable<any>{
-    return this.http.post<any>(this.apiUrl, formData)
+  postContactFormData(formData:ContactFormResponse):Observable<ContactFormResponse>{
+    return this.http.post<ContactFormResponse>(this.apiUrl, formData, this.httpOptions)
   }
 
 }
