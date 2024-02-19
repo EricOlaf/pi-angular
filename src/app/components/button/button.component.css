@@ -4,7 +4,6 @@
   border-radius: 22px;
   cursor: pointer;
   border: none;
-  color: #f5f5dc;
 }
 
 .button-small {
@@ -18,10 +17,12 @@
 
 .button-primary-color {
   background-color: #26453e;
+  color: #f5f5dc;
 }
 
 .button-secondary-color {
   background-color: #0d98ba;
+  color: #f5f5dc;
 }
 
 .button-large {
