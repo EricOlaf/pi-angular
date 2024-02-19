@@ -6,12 +6,14 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ContactFormResponse, ContactFormService } from '../../contact-form.service';
+import { ButtonComponent } from '../button/button.component';
+
 
 
 @Component({
   selector: 'app-modal',
   standalone: true,
-  imports: [CommonModule,FontAwesomeModule,ReactiveFormsModule],
+  imports: [CommonModule,FontAwesomeModule,ReactiveFormsModule, ButtonComponent],
   templateUrl: './modal.component.html',
   styleUrl: './modal.component.css'
 })

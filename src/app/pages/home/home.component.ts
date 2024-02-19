@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ButtonComponent } from '../../components/button/button.component';
+
 import { PiCardListComponent } from '../../components/pi-card-list/pi-card-list.component';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-home',

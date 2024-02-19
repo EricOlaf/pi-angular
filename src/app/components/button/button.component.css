@@ -1,7 +1,47 @@
-button {
-  margin: 2rem 0;
-  padding: 0.5rem 1rem;
-  background-color: #008080;
-  color: #f5f5dc;
-  font-size: 1.5rem;
-}
+/* Modal buttons */
+.button-small{
+    border-radius: 22px;
+    height: 35px;
+    width: 85px;
+    cursor: pointer;
+  }
+  
+  .button-small:hover:enabled{
+      color: #f5f5dc;
+      background-color: #0D98BA;
+    cursor: pointer;
+  }
+
+  .button-primary-color{
+    background-color:  #26453E;
+    border: none;
+    color: #f5f5dc;
+  }
+
+  .button-secondary-color{
+    background-color: #0D98BA;
+    border: none;
+    color: #f5f5dc;
+  }
+  
+  .button-large {
+    border-radius: 22px;
+    height: 25px;
+    width: 100px;
+    cursor: pointer;
+    margin-top:250px
+  }
+  
+  .button-xl {
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #008080;
+    color: #f5f5dc;
+    font-size: 1.5rem;
+  }
+
+  .button-large:hover:enabled{
+      color: #f5f5dc;
+      background-color: #0D98BA;
+      cursor: pointer;
+  }
