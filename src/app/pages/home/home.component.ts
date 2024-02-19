@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ButtonComponent } from '../../components/button/button.component';
 import { PiCardListComponent } from '../../components/pi-card-list/pi-card-list.component';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-home',
@@ -10,4 +10,8 @@ import { PiCardListComponent } from '../../components/pi-card-list/pi-card-list.
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  selectPI() {
+    console.log('PI SELECTED');
+  }
+}

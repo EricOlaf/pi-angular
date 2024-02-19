@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ModalComponent } from '../modal/modal.component';
+
 @Component({
   selector: 'app-footer',
   standalone: true,
