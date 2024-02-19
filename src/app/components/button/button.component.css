@@ -31,13 +31,14 @@
     cursor: pointer;
     margin-top:250px
   }
-  
+
   .button-xl {
     margin: 2rem 0;
     padding: 0.5rem 1rem;
     background-color: #008080;
     color: #f5f5dc;
     font-size: 1.5rem;
+    cursor: pointer;
   }
 
   .button-large:hover:enabled{

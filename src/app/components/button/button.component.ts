@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,12 +7,12 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   imports: [CommonModule],
   templateUrl: './button.component.html',
   styleUrl: './button.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush 
 })
 export class ButtonComponent {
   @Input() public text: string = "" 
-  @Input() public size: "small" | "large" | "xl" = "small" /* this gives default size small */
-  @Input() public color: "primary" | "secondary" = "primary"  /* this gives default of primary */
+  @Input() public size: "small" | "large" | "xl" = "small" 
+  @Input() public color: "primary" | "secondary" = "primary"  
 
 getButtonClass(){
 return {

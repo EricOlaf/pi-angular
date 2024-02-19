@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { PiCardListComponent } from '../../components/pi-card-list/pi-card-list.component';
@@ -11,4 +11,9 @@ import { ButtonComponent } from '../../components/button/button.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+
+selectPI(){
+  console.log("PI SELECTED")
+}
+}
