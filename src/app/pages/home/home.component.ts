@@ -1,6 +1,5 @@
 import { Component, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
 import { PiCardListComponent } from '../../components/pi-card-list/pi-card-list.component';
 import { ButtonComponent } from '../../components/button/button.component';
 
