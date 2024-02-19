@@ -11,8 +11,7 @@ import { ButtonComponent } from '../../components/button/button.component';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-
-selectPI(){
-  console.log("PI SELECTED")
-}
+  selectPI() {
+    console.log('PI SELECTED');
+  }
 }
