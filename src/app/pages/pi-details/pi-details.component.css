@@ -1,0 +1,41 @@
+/* PI details */
+
+.temp-header {
+  display: flex;
+  background-color: #26453e;
+  color: #f5f5dc;
+  height: 100px;
+}
+
+.details-container {
+  padding: 24px 24px;
+}
+
+.details-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 24px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.details-image {
+  height: 200px;
+  width: 200px;
+  background-color: #0d98ba;
+  border-radius: 100px;
+}
+
+.detail-items {
+  margin-left: 24px;
+}
+.detail-items > * {
+  margin: 12px 12px 0  
+}
+
+.details-review-container {
+  margin-top: 48px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
