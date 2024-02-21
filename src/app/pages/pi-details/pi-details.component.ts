@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { PiDetailsService } from '../../pi-details.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-pi-details',
@@ -9,9 +11,27 @@ import { CommonModule } from '@angular/common';
   templateUrl: './pi-details.component.html',
   styleUrl: './pi-details.component.css',
 })
+export class PiDetailsComponent implements OnInit {
+  piProfileId: any;
 
-export class PiDetailsComponent {
+  constructor(
+    private route: ActivatedRoute,
+    private piProfileData: PiDetailsService
+  ) {}
 
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params) => {
+      this.piProfileId = params.get('id');
+      this.fetchPiProfileId();
+    });
+  }
+  fetchPiProfileId(): void {
+    this.piProfileData
+      .getProfileDetailsData(this.piProfileId)
+      .subscribe((data) => {
+        this.piProfileData = data;
+      });
+  }
 
   title: string = 'TITLE';
   name: string = 'Samantha Reed';
