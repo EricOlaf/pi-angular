@@ -11,7 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 
 export class PiDetailsComponent {
-  require: any;
+
+
   title: string = 'TITLE';
   name: string = 'Samantha Reed';
   rating: string = '88';
