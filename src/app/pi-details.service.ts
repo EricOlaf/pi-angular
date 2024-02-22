@@ -2,7 +2,6 @@ import { Injectable, Input } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-
 export interface PIProfileData {
   id: string;
   name: string;
@@ -18,9 +17,11 @@ export interface Review {
   date: string;
   reviewText: string;
 }
+
 @Injectable({
   providedIn: 'root',
 })
+
 export class PiDetailsService {
   @Input() id: number = 0;
   private apiUrl = `http://localhost:3000/piProfiles/${this.id}`;

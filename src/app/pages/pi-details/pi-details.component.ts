@@ -5,8 +5,6 @@ import { PIProfileData, PiDetailsService } from '../../pi-details.service';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
-
-
 @Component({
   selector: 'app-pi-details',
   standalone: true,
@@ -17,7 +15,7 @@ import { Subscription } from 'rxjs';
 export class PiDetailsComponent implements OnInit, OnDestroy {
   isSuccess: boolean = false;
   piProfileId: any;
-  profileData: PIProfileData | undefined; 
+  profileData: PIProfileData | undefined;
   title: string = 'TITLE';
   name: string = 'Samantha Reed';
   rating: string = '88';
@@ -41,14 +39,12 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
         this.profileData = data;
         this.isSuccess = true;
       },
-      error:(error) =>{
-        console.log(error)
-         this.isSuccess = false
-      }
+      error: (error) => {
+        console.log(error);
+        this.isSuccess = false;
+      },
     });
   }
-
-
 
   ngOnInit(): void {
     this.subscription = this.route.paramMap.subscribe((params) => {
