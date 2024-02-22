@@ -1,19 +1,29 @@
 <div class="temp-header"></div>
 <div class="details-container">
-  <h1>{{ title }}</h1>
-  <div class="details-row">
-    <div>
-      <div class="details-image"></div>
-      <p>{{ ratingPercentage }}</p>
+  <ng-container *ngIf="!isSuccess; else errorScreen">
+    <h1>{{ title }}</h1>
+    <div class="details-row">
+      <div>
+        <div class="details-image"></div>
+        <p>{{ ratingPercentage }}</p>
+      </div>
+      <div class="detail-items">
+        <h3>{{ name }}</h3>
+        <p>{{ specialty }}</p>
+        <p>{{ location }}</p>
+        <p>{{ description }}</p>
+      </div>
     </div>
-    <div class="detail-items">
-      <h3>{{ name }}</h3>
-      <p>{{ specialty }}</p>
-      <p>{{ location }}</p>
-      <p>{{ description }}</p>
+    <div class="details-review-container">
+      <p>{{ reviews }}</p>
     </div>
-  </div>
-  <div class="details-review-container">
-    <p>{{ reviews }}</p>
-  </div>
+  </ng-container>
+  <ng-template #errorScreen>
+    <div class="success-message-container">
+      <div class="success-message">
+        <h4>There was an error loading please check back again</h4>
+      </div>
+      <button class="close-button">Back</button>
+    </div>
+  </ng-template>
 </div>

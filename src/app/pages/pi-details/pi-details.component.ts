@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { PiDetailsService } from '../../pi-details.service';
@@ -14,6 +14,8 @@ import { Subscription } from 'rxjs';
 })
 export class PiDetailsComponent implements OnInit, OnDestroy {
   
+  @Input() isSuccess: boolean = false 
+  
   piProfileId: any;
   title: string = 'TITLE';
   name: string = 'Samantha Reed';
@@ -25,6 +27,7 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
     'Samantha Reed is an expert in corporate espionage and fraud investigation. She has a sharp mind and a vast network of informants, making her the go-to PI for businesses facing internal threats.';
   reviews: string =
     'Samantha was the best PI I could ever hope for blah blah blah blah';
+
 
   constructor(
     private route: ActivatedRoute,
@@ -44,6 +47,7 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
       .getProfileDetailsData(this.piProfileId)
       .subscribe((data) => {
         this.piProfileData = data;
+this.isSuccess= true
       });
   }
 

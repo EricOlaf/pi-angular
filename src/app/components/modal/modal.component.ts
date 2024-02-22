@@ -57,14 +57,14 @@ export class ModalComponent implements OnInit {
   onClose(){
     this.closeModal.emit()
     this.contactForm.reset();
-    this.routes.navigate(['/']);
+    this.routes.navigate(['']);
   }
 
   resetForm() {
     this.isSubmitted = false;
     this.contactForm.reset();
     this.closeModal.emit()
-    this.routes.navigate(['/']);
+    this.routes.navigate(['']);
   }
 }
 
