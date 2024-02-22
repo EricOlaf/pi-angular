@@ -1,9 +1,11 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { CommonModule } from '@angular/common';
-import { PiDetailsService } from '../../pi-details.service';
+import { PIProfileData, PiDetailsService } from '../../pi-details.service';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
+
+
 
 @Component({
   selector: 'app-pi-details',
@@ -13,10 +15,9 @@ import { Subscription } from 'rxjs';
   styleUrl: './pi-details.component.css',
 })
 export class PiDetailsComponent implements OnInit, OnDestroy {
-  
-  @Input() isSuccess: boolean = false 
-  
+  isSuccess: boolean = false;
   piProfileId: any;
+  profileData: PIProfileData | undefined; 
   title: string = 'TITLE';
   name: string = 'Samantha Reed';
   rating: string = '88';
@@ -28,31 +29,35 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
   reviews: string =
     'Samantha was the best PI I could ever hope for blah blah blah blah';
 
-
   constructor(
     private route: ActivatedRoute,
-    private piProfileData: PiDetailsService,
+    private piProfileService: PiDetailsService,
     private subscription: Subscription
   ) {}
+
+  fetchPiProfile(): void {
+    this.piProfileService.getProfileDetailsData(this.piProfileId).subscribe({
+      next: (data: PIProfileData) => {
+        this.profileData = data;
+        this.isSuccess = true;
+      },
+      error:(error) =>{
+        console.log(error)
+         this.isSuccess = false
+      }
+    });
+  }
+
+
 
   ngOnInit(): void {
     this.subscription = this.route.paramMap.subscribe((params) => {
       this.piProfileId = params.get('id');
-      this.fetchPiProfileId();
+      this.fetchPiProfile();
     });
-  }
-
-  fetchPiProfileId(): void {
-    this.piProfileData
-      .getProfileDetailsData(this.piProfileId)
-      .subscribe((data) => {
-        this.piProfileData = data;
-this.isSuccess= true
-      });
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
-
 }

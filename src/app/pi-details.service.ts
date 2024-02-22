@@ -4,8 +4,19 @@ import { Observable } from 'rxjs';
 
 
 export interface PIProfileData {
-  id: string
+  id: string;
+  name: string;
+  address: string;
+  specialty: string;
+  description: string;
+  rating: number;
+  reviews: Review[];
+}
 
+export interface Review {
+  id: string;
+  date: string;
+  reviewText: string;
 }
 @Injectable({
   providedIn: 'root',
@@ -19,7 +30,7 @@ export class PiDetailsService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
 
-  getProfileDetailsData(id: string): Observable<any> {
-    return this.http.get<any>(this.apiUrl, this.httpOptions );
+  getProfileDetailsData(id: string): Observable<PIProfileData> {
+    return this.http.get<PIProfileData>(this.apiUrl, this.httpOptions );
   }
 }
