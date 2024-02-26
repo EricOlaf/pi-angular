@@ -1,7 +1,14 @@
 <header class="header-container">
   <h1>Pick a PI</h1>
   <h2>The Place You Go to Find the Right PI!</h2>
-  <app-button></app-button>
+  <app-button
+    text="Pick a PI PIELEASE"
+    color="secondary"
+    size="large"
+    routerLink="/investigator-list"
+    (click)="selectPI()"
+    class="btn"
+  ></app-button>
 </header>
 <section class="container">
   <p>
@@ -16,13 +23,14 @@
     putrid voodoo horror. Nigh tofth eliv ingdead.
   </p>
   <div class="list-container">
-    <app-pi-card-list></app-pi-card-list>
+    <app-pi-card-list [piList]="piListHome"></app-pi-card-list>
   </div>
   <div class="center">
     <app-button
       text="Pick A PIEE"
       color="secondary"
       size="xl"
+      routerLink="/investigator-list"
       (click)="selectPI()"
       class="btn"
     >
@@ -40,4 +48,3 @@
     putrid voodoo horror. Nigh tofth eliv ingdead.
   </p>
 </section>
-<section></section>
