@@ -1,5 +1,5 @@
 <div class="card-container">
-  <div *ngFor="let card of cardArray">
-    <app-pi-card></app-pi-card>
+  <div *ngFor="let card of piList">
+    <app-pi-card [cardInfo]="card"></app-pi-card>
   </div>
 </div>
