@@ -4,7 +4,7 @@ import { HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface PIProfileData {
-  id: string;
+  id: number;
   name: string;
   address: string;
   specialty: string;

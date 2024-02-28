@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
-import { PIProfileData } from '../../pi-details.service';
+import { PIProfileData, PiDetailsService } from '../../pi-details.service';
+import { PiListService } from '../../pi-list.service';
 
 @Component({
   selector: 'app-pi-card',
@@ -11,7 +12,7 @@ import { PIProfileData } from '../../pi-details.service';
 })
 export class PiCardComponent {
   @Input() cardInfo: PIProfileData = {
-    id: '',
+    id: 0,
     name: '',
     address: '',
     specialty: '',
@@ -19,4 +20,26 @@ export class PiCardComponent {
     rating: 0,
     // reviews: []
   };
+    piProfiles: PIProfileData[] = [];
+
+  constructor(
+    private piListService: PiListService,
+    private piDetails: PiDetailsService
+  ) {}
+
+  ngOnInit(): void {
+    this.getPIList();
+  }
+  getPIList(): void {
+    this.piListService.getPIList().subscribe((piProfiles) => {
+      this.piProfiles = piProfiles;
+    });
+  }
+  selectPI(profileId: number) {
+    this.piDetails
+      .getProfileDetailsData(profileId)
+      .subscribe((profileDetails) => {
+        console.log(profileDetails);
+      });
+  }
 }

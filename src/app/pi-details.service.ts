@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface PIProfileData {
-  id: string;
+  id: number;
   name: string;
   address: string;
   specialty: string;
@@ -23,15 +23,16 @@ export interface Review {
 })
 
 export class PiDetailsService {
-  @Input() id: number = 0;
-  private apiUrl = `http://localhost:3000/piProfiles/${this.id}`;
+
+  private apiUrl = `http://localhost:3000/piProfiles`;
 
   constructor(private http: HttpClient) {}
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
 
-  getProfileDetailsData(id: string): Observable<PIProfileData> {
-    return this.http.get<PIProfileData>(this.apiUrl, this.httpOptions );
+  getProfileDetailsData(id: number): Observable<any> {
+     const profileUrl = `${this.apiUrl}/${id}`
+    return this.http.get<any>(profileUrl, this.httpOptions );
   }
 }
