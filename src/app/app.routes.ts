@@ -7,17 +7,17 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Home page',
+    title: 'Home',
   },
   {
     path: 'investigator-list',
     component: PiListComponent,
-    title: 'Home page',
+    title: 'List of PIs',
   },
   {
     path: 'details/:id',
     component: PiDetailsComponent,
-    title: 'Home page',
+    title: 'Details',
   },
 ];
 

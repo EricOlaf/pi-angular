@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pi-card',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './pi-card.component.html',
   styleUrl: './pi-card.component.css',
 })
-export class PiCardComponent {}
+export class PiCardComponent {
+  @Input() cardInfo: { name: string; specialty: string } = {
+    name: '',
+    specialty: '',
+  };
+}
