@@ -1,7 +1,7 @@
 <div class="container">
 {{ cardInfo.name }}
 <button
-routerLink="/details"
+ [routerLink]="'/details/' + cardInfo.id"
 (click)="selectPI(cardInfo.id)"
 >Select PI </button>
 </div>

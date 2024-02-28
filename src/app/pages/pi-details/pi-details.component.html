@@ -1,6 +1,6 @@
 <div class="temp-header"></div>
 <div class="details-container">
-  <ng-container *ngIf="!isSuccess; else errorScreen">
+  <!-- <ng-container *ngIf="!isSuccess; else errorScreen"> -->
     <h1>{{ title }}</h1>
     <div class="details-row">
       <div>
@@ -17,13 +17,13 @@
     <div class="details-review-container">
       <p>{{ reviews }}</p>
     </div>
-  </ng-container>
-  <ng-template #errorScreen>
+  <!-- </ng-container> -->
+  <!-- <ng-template #errorScreen>
     <div class="success-message-container">
       <div class="success-message">
         <h4>There was an error loading please check back again</h4>
       </div>
       <button class="close-button">Back</button>
     </div>
-  </ng-template>
+  </ng-template> -->
 </div>

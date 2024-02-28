@@ -15,8 +15,7 @@ const routes: Routes = [
     title: 'List of PIs',
   },
   {
-    // path: 'details/:id',
-    path: 'details',
+    path: 'details/:id',
     component: PiDetailsComponent,
     title: 'Details',
   },
