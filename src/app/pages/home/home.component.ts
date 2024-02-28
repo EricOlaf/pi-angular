@@ -2,6 +2,7 @@ import { Component, Output } from '@angular/core';
 import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { PiCardListComponent } from '../../components/pi-card-list/pi-card-list.component';
 import { ButtonComponent } from '../../components/button/button.component';
+import { PIProfileData, PiListService } from '../../pi-list.service';
 
 @Component({
   selector: 'app-home',
@@ -17,11 +18,18 @@ import { ButtonComponent } from '../../components/button/button.component';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  piListHome = [
-    { name: 'Eric', specialty: 'Dog Recovery' },
-    { name: 'Ian', specialty: 'Alaskan stuff' },
-    { name: 'Jackson', specialty: "Nova's dad" },
-  ];
+  piProfiles: PIProfileData[] = [];
+
+  constructor(private piListService: PiListService) {}
+
+  ngOnInit(): void {
+    this.getPIList();
+  }
+  getPIList(): void {
+    this.piListService.getPIList().subscribe((piProfiles) => {
+      this.piProfiles = piProfiles;
+    });
+  }
   selectPI() {
     console.log('Yeee yee');
   }

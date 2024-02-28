@@ -9,7 +9,7 @@ export interface PIProfileData {
   specialty: string;
   description: string;
   rating: number;
-  reviews: Review[];
+  reviews?: Review[];
 }
 
 export interface Review {
