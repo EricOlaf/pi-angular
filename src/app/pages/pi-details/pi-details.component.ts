@@ -12,7 +12,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './pi-details.component.html',
   styleUrl: './pi-details.component.css',
 })
-export class PiDetailsComponent implements OnInit, OnDestroy {
+export class PiDetailsComponent  {
   isSuccess: boolean = false;
   piProfileId: any;
   profileData: PIProfileData | undefined;
@@ -27,33 +27,33 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
   reviews: string =
     'Samantha was the best PI I could ever hope for blah blah blah blah';
 
-  constructor(
-    private route: ActivatedRoute,
-    private piProfileService: PiDetailsService,
-    private subscription: Subscription
-  ) {}
+  // constructor(
+  //   private route: ActivatedRoute,
+  //   private piProfileService: PiDetailsService,
+  //   private subscription: Subscription
+  // ) {}
 
-  fetchPiProfile(): void {
-    this.piProfileService.getProfileDetailsData(this.piProfileId).subscribe({
-      next: (data: PIProfileData) => {
-        this.profileData = data;
-        this.isSuccess = true;
-      },
-      error: (error) => {
-        console.log(error);
-        this.isSuccess = false;
-      },
-    });
-  }
+  // fetchPiProfile(): void {
+  //   this.piProfileService.getProfileDetailsData(this.piProfileId).subscribe({
+  //     next: (data: PIProfileData) => {
+  //       this.profileData = data;
+  //       this.isSuccess = true;
+  //     },
+  //     error: (error) => {
+  //       console.log(error);
+  //       this.isSuccess = false;
+  //     },
+  //   });
+  // }
 
-  ngOnInit(): void {
-    this.subscription = this.route.paramMap.subscribe((params) => {
-      this.piProfileId = params.get('id');
-      this.fetchPiProfile();
-    });
-  }
+  // ngOnInit(): void {
+  //   this.subscription = this.route.paramMap.subscribe((params) => {
+  //     this.piProfileId = params.get('id');
+  //     this.fetchPiProfile();
+  //   });
+  // }
 
-  ngOnDestroy() {
-    this.subscription.unsubscribe();
-  }
+  // ngOnDestroy() {
+  //   this.subscription.unsubscribe();
+  // }
 }
