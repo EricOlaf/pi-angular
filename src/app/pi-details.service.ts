@@ -1,4 +1,4 @@
-import { Injectable, Input } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -31,8 +31,8 @@ export class PiDetailsService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
 
-  getProfileDetailsData(id: number): Observable<any> {
+  getProfileDetailsData(id: number): Observable<PIProfileData> {
      const profileUrl = `${this.apiUrl}/${id}`
-    return this.http.get<any>(profileUrl, this.httpOptions );
+    return this.http.get<PIProfileData>(profileUrl, this.httpOptions );
   }
 }

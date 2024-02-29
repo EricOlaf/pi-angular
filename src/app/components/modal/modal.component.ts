@@ -51,7 +51,7 @@ export class ModalComponent implements OnInit {
       next: (response: ContactFormResponse) => {
         if (contactFormStatus === 'VALID') {
           this.isSubmitted = true;
-          console.log('Data posted successfully:', response);
+          // console.log('Data posted successfully:', response);
         }
       },
       error: (error: string) => {

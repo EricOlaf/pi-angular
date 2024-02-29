@@ -39,7 +39,7 @@ export class PiCardComponent {
     this.piDetails
       .getProfileDetailsData(profileId)
       .subscribe((profileDetails) => {
-        console.log(profileDetails);
+        // console.log(profileDetails);
       });
   }
 }
