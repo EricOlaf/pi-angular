@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { PIProfileData, PiDetailsService } from '../../pi-details.service';
 import { PiListService } from '../../pi-list.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-pi-card',
@@ -10,7 +11,7 @@ import { PiListService } from '../../pi-list.service';
   templateUrl: './pi-card.component.html',
   styleUrl: './pi-card.component.css',
 })
-export class PiCardComponent {
+export class PiCardComponent implements OnDestroy {
   @Input() cardInfo: PIProfileData = {
     id: '',
     name: '',
@@ -18,28 +19,20 @@ export class PiCardComponent {
     specialty: '',
     description: '',
     rating: 0,
-    // reviews: []
+    reviews: [],
   };
   piProfiles: PIProfileData[] = [];
+  subscription: Subscription | undefined;
 
-  constructor(
-    private piListService: PiListService,
-    private piDetails: PiDetailsService
-  ) {}
+  constructor(private piDetails: PiDetailsService) {}
 
-  ngOnInit(): void {
-    this.getPIList();
-  }
-  getPIList(): void {
-    this.piListService.getPIList().subscribe((piProfiles) => {
-      this.piProfiles = piProfiles;
-    });
-  }
   selectPI(profileId: string) {
-    this.piDetails
+    this.subscription = this.piDetails
       .getProfileDetailsData(profileId)
-      .subscribe((profileDetails) => {
-        console.log(profileDetails);
-      });
+      .subscribe();
+    // DO I NEED ERROR HANDLING HERE?
+  }
+  ngOnDestroy(): void {
+    this.subscription?.unsubscribe();
   }
 }

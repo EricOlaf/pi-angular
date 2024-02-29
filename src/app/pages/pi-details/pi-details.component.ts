@@ -28,14 +28,11 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
   piProfileId: string = '';
   profileData: PIProfileData | undefined;
   title: string = 'PI Profile';
-
-  private subscription: Subscription = new Subscription();
+  subscription: Subscription | undefined;
   constructor(
     private route: ActivatedRoute,
     private piProfileService: PiDetailsService
-  ) {
-    this.subscription = new Subscription();
-  }
+  ) {}
 
   fetchPiProfile(): void {
     this.piProfileService.getProfileDetailsData(this.piProfileId).subscribe({
@@ -62,6 +59,6 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.subscription.unsubscribe();
+    this.subscription?.unsubscribe();
   }
 }
