@@ -2,15 +2,24 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { PIProfileData, PiDetailsService } from '../../pi-details.service';
-import { ActivatedRoute, RouterLink, RouterModule, RouterOutlet } from '@angular/router';
+import {
+  ActivatedRoute,
+  RouterLink,
+  RouterModule,
+  RouterOutlet,
+} from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-pi-details',
   standalone: true,
-  imports: [CommonModule, FooterComponent, RouterModule,
+  imports: [
+    CommonModule,
+    FooterComponent,
+    RouterModule,
     RouterLink,
-    RouterOutlet,],
+    RouterOutlet,
+  ],
   templateUrl: './pi-details.component.html',
   styleUrl: './pi-details.component.css',
 })
@@ -19,7 +28,7 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
   piProfileId: any;
   profileData: PIProfileData | undefined;
   title: string = 'PI Profile';
-  
+
   private subscription: Subscription = new Subscription();
   constructor(
     private route: ActivatedRoute,
@@ -49,8 +58,6 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    if (this.subscription) {
-      this.subscription.unsubscribe();
-    }
+    this.subscription.unsubscribe();
   }
 }

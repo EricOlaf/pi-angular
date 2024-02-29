@@ -22,8 +22,8 @@ export class PiListService {
   constructor(private http: HttpClient) {}
 
 
-  getPIList(): Observable<any> {
-    return this.http.get<any>(this.piListUrl);
+  getPIList(): Observable<PIProfileData[]> {
+    return this.http.get<PIProfileData[]>(this.piListUrl);
   }
 
 }
