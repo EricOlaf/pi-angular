@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface PIProfileData {
-  id: number;
+  id: string;
   name: string;
   address: string;
   specialty: string;
@@ -31,7 +31,7 @@ export class PiDetailsService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
 
-  getProfileDetailsData(id: number): Observable<PIProfileData> {
+  getProfileDetailsData(id: string): Observable<PIProfileData> {
      const profileUrl = `${this.apiUrl}/${id}`
     return this.http.get<PIProfileData>(profileUrl, this.httpOptions );
   }

@@ -25,7 +25,7 @@ import { Subscription } from 'rxjs';
 })
 export class PiDetailsComponent implements OnInit, OnDestroy {
   isSuccess: boolean = false;
-  piProfileId: any;
+  piProfileId: string = '';
   profileData: PIProfileData | undefined;
   title: string = 'PI Profile';
 
@@ -52,7 +52,11 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.subscription = this.route.paramMap.subscribe((params) => {
-      this.piProfileId = params.get('id');
+      const id = params.get('id');
+      if (id) {
+        this.piProfileId = id;
+        this.fetchPiProfile();
+      }
       this.fetchPiProfile();
     });
   }

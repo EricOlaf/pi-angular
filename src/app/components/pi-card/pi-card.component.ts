@@ -12,7 +12,7 @@ import { PiListService } from '../../pi-list.service';
 })
 export class PiCardComponent {
   @Input() cardInfo: PIProfileData = {
-    id: 0,
+    id: '',
     name: '',
     address: '',
     specialty: '',
@@ -20,7 +20,7 @@ export class PiCardComponent {
     rating: 0,
     // reviews: []
   };
-    piProfiles: PIProfileData[] = [];
+  piProfiles: PIProfileData[] = [];
 
   constructor(
     private piListService: PiListService,
@@ -35,11 +35,11 @@ export class PiCardComponent {
       this.piProfiles = piProfiles;
     });
   }
-  selectPI(profileId: number) {
+  selectPI(profileId: string) {
     this.piDetails
       .getProfileDetailsData(profileId)
       .subscribe((profileDetails) => {
-        // console.log(profileDetails);
+        console.log(profileDetails);
       });
   }
 }
