@@ -2,13 +2,15 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { PIProfileData, PiDetailsService } from '../../pi-details.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-pi-details',
   standalone: true,
-  imports: [CommonModule, FooterComponent],
+  imports: [CommonModule, FooterComponent, RouterModule,
+    RouterLink,
+    RouterOutlet,],
   templateUrl: './pi-details.component.html',
   styleUrl: './pi-details.component.css',
 })

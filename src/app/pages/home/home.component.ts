@@ -8,9 +8,9 @@ import { PIProfileData, PiListService } from '../../pi-list.service';
   selector: 'app-home',
   standalone: true,
   imports: [
-    RouterModule,
     ButtonComponent,
     PiCardListComponent,
+    RouterModule,
     RouterLink,
     RouterOutlet,
   ],
