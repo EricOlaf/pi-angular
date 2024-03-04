@@ -23,7 +23,6 @@ export interface Review {
 })
 
 export class PiDetailsService {
-
   private apiUrl = `http://localhost:3000/piProfiles`;
 
   constructor(private http: HttpClient) {}
@@ -32,7 +31,8 @@ export class PiDetailsService {
   };
 
   getProfileDetailsData(id: string): Observable<PIProfileData> {
-     const profileUrl = `${this.apiUrl}/${id}`
-    return this.http.get<PIProfileData>(profileUrl, this.httpOptions );
-  }
+    const profileUrl = `${this.apiUrl}/${id}`;
+    return this.http.get<PIProfileData>(profileUrl, this.httpOptions);
+  };
+
 }

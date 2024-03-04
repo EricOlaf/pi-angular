@@ -9,6 +9,7 @@ import {
   RouterOutlet,
 } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { PiReviewsService } from '../../pi-reviews.service';
 
 @Component({
   selector: 'app-pi-details',
@@ -31,7 +32,8 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
   subscription: Subscription | undefined;
   constructor(
     private route: ActivatedRoute,
-    private piProfileService: PiDetailsService
+    private piProfileService: PiDetailsService,
+    private piReviews : PiReviewsService
   ) {}
 
   fetchPiProfile(): void {
@@ -46,8 +48,15 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
       },
     });
   }
-  getPIReviews():void{
-
+  deleteReview(reviewId: string, id: string | undefined): void {
+    if(id){
+    this.piReviews.deletePIReview(reviewId, id).subscribe(
+      (response)=>{
+        console.log(response)
+      }
+    );
+    }
+    console.log("HEY",reviewId,id)
   }
 
   ngOnInit(): void {

@@ -32,6 +32,7 @@ export class PiCardComponent implements OnDestroy {
       .subscribe();
     // DO I NEED ERROR HANDLING HERE?
   }
+
   ngOnDestroy(): void {
     this.subscription?.unsubscribe();
   }

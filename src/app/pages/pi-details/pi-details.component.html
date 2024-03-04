@@ -20,6 +20,7 @@
     >
       <p>{{ review.date }}</p>
       <p>{{ review.reviewText }}</p>
+      <button (click)="deleteReview(review.id,profileData?.id)">Delete review</button>
     </div>
     <button routerLink="/investigator-list">Back</button>
   </ng-container>
