@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PiCardListComponent } from '../../components/pi-card-list/pi-card-list.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { PIProfileData, PiListService } from '../../pi-list.service';
 
 @Component({
   selector: 'app-pi-list',
@@ -10,14 +11,16 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './pi-list.component.css',
 })
 export class PiListComponent {
-  piListAll = [
-    { name: 'Eric Ola', specialty: 'Dog Recovery' },
-    { name: 'Ian Handy', specialty: 'Alaskan stuff' },
-    { name: 'Jackson Mickey', specialty: "Nova's dad" },
-    { name: 'Austin Tummy', specialty: 'EDM' },
-    { name: 'Lewis Hamilton', specialty: 'Mercedes' },
-    { name: 'Max Verstappen', specialty: 'Red Bull' },
-    { name: 'Charles Leclerc', specialty: 'Ferrari' },
-    { name: 'Lando Norris', specialty: 'Mclarren' },
-  ];
+  piProfiles: PIProfileData[] = [];
+
+  constructor(private piListService: PiListService) {}
+
+  ngOnInit(): void {
+    this.getPIList();
+  }
+  getPIList(): void {
+    this.piListService.getPIList().subscribe((piProfiles) => {
+      this.piProfiles = piProfiles;
+    });
+  }
 }
