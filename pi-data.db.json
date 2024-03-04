@@ -8,7 +8,18 @@
       "description": "Elena Cruz is a seasoned investigator with a keen eye for detail. She specializes in discreet surveillance and thorough background checks, providing comprehensive reports for her clients.",
       "profilePhotoUrl": "assets/pi-photos/woman#1.jpg",
       "rating": 84,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "2",
@@ -18,7 +29,18 @@
       "description": "Jack Davidson has a knack for solving the unsolvable. With a background in law enforcement, he excels in finding missing persons and unraveling cold cases that others have given up on.",
       "profilePhotoUrl": "assets/pi-photos/man#1.jpg",
       "rating": 73,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "3",
@@ -28,7 +50,18 @@
       "description": "Samantha Reed is an expert in corporate espionage and fraud investigation. She has a sharp mind and a vast network of informants, making her the go-to PI for businesses facing internal threats.",
       "profilePhotoUrl": "assets/pi-photos/woman#2.jpg",
       "rating": 88,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": 4,
@@ -38,7 +71,18 @@
       "description": "Max Thompson is a former insurance claims adjuster turned private investigator. His insider knowledge of the industry allows him to uncover fraudulent claims swiftly and efficiently, saving insurance companies millions.",
       "profilePhotoUrl": "assets/pi-photos/man#2.jpg",
       "rating": 91,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "5",
@@ -58,7 +102,18 @@
       "description": "Tom Walker specializes in discreetly uncovering infidelity. With a blend of technology and street smarts, he helps clients uncover the truth about their partners, providing closure and peace of mind.",
       "profilePhotoUrl": "assets/pi-photos/man#3.jpg",
       "rating": 72,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "7",
@@ -78,7 +133,18 @@
       "description": "Mark Robinson is a master of undercover operations. With his ability to blend in seamlessly, he infiltrates even the most secretive organizations to gather intel and expose illicit activities.",
       "profilePhotoUrl": "assets/pi-photos/man#4.jpg",
       "rating": 87,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "9",
@@ -88,7 +154,18 @@
       "description": "Grace Sanchez specializes in child custody and family law investigations. With empathy and determination, she uncovers crucial evidence to support her clients in legal battles for custody.",
       "profilePhotoUrl": "assets/pi-photos/woman#5.jpg",
       "rating": 79,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "10",
@@ -98,7 +175,18 @@
       "description": "Daniel Miller is a forensic accountant turned private investigator. With a sharp eye for numbers and a deep understanding of financial systems, he uncovers embezzlement and financial fraud with ease.",
       "profilePhotoUrl": "assets/pi-photos/man#5.jpg",
       "rating": 92,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "11",
@@ -108,7 +196,18 @@
       "description": "Sophie Adams specializes in stalker and harassment investigations. With her expertise in threat assessment and risk management, she provides safety solutions for individuals facing persistent threats.",
       "profilePhotoUrl": "assets/pi-photos/woman#6.jpg",
       "rating": 82,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "12",
@@ -118,7 +217,18 @@
       "description": "Nathan Stewart is a dedicated investigator focused on solving cold case homicides. With meticulous attention to detail and advanced forensic techniques, he brings closure to families and justice to victims.",
       "profilePhotoUrl": "assets/pi-photos/man#6.jpg",
       "rating": 70,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "13",
@@ -128,7 +238,18 @@
       "description": "Olivia Garcia is an expert in undercover surveillance. With her ability to blend into any environment, she gathers critical evidence for her clients without raising suspicion.",
       "profilePhotoUrl": "assets/pi-photos/woman#7.jpg",
       "rating": 90,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "14",
@@ -138,7 +259,18 @@
       "description": "Ryan Turner specializes in locating missing persons and runaways. With a compassionate approach and extensive resources, he reunites families and provides support for those in need.",
       "profilePhotoUrl": "assets/pi-photos/man#7.jpg",
       "rating": 75,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "15",
@@ -148,7 +280,18 @@
       "description": "Emma White handles complex corporate investigations with finesse. With a background in corporate law, she uncovers fraud, corruption, and intellectual property theft, protecting her clients' interests.",
       "profilePhotoUrl": "assets/pi-photos/woman#8.jpg",
       "rating": 78,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "16",
@@ -158,7 +301,18 @@
       "description": "David Carter provides thorough background checks and due diligence services. With access to extensive databases and meticulous research skills, he helps clients make informed decisions.",
       "profilePhotoUrl": "assets/pi-photos/man#8.jpg",
       "rating": 93,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "17",
@@ -168,7 +322,18 @@
       "description": "Lily Johnson specializes in surveillance and counter-surveillance techniques. With advanced training in electronic countermeasures, she protects clients from corporate espionage and privacy breaches.",
       "profilePhotoUrl": "assets/pi-photos/woman#9.jpg",
       "rating": 94,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "18",
@@ -188,7 +353,18 @@
       "description": "Sophia Clark specializes in insurance claims investigations. With a blend of analytical skills and field experience, she verifies the legitimacy of claims, saving insurance companies from fraudulent payouts.",
       "profilePhotoUrl": "assets/pi-photos/woman#10.jpg",
       "rating": 71,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "20",
@@ -198,7 +374,18 @@
       "description": "Benjamin Wright conducts comprehensive background investigations for employment purposes. With a focus on due diligence, he ensures that companies hire trustworthy and reliable candidates.",
       "profilePhotoUrl": "assets/pi-photos/man#10.jpg",
       "rating": 97,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     },
     {
       "id": "21",
@@ -208,7 +395,18 @@
       "description": "Isabella Martinez specializes in asset search and recovery. With her expertise in financial analysis and legal procedures, she assists clients in locating and reclaiming hidden assets.",
       "profilePhotoUrl": "assets/pi-photos/woman#11.jpg",
       "rating": 80,
-      "reviews": [{ "id": "", "date": "", "reviewText": "" }]
+      "reviews": [
+        {
+          "id": "9",
+          "date": "2024-02-20",
+          "reviewText": "Excellent cybersecurity services!"
+        },
+        {
+          "id": "10",
+          "date": "2024-02-19",
+          "reviewText": "Highly recommend for digital forensics."
+        }
+      ]
     }
   ]
 }
