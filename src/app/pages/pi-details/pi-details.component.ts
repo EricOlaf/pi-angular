@@ -46,6 +46,9 @@ export class PiDetailsComponent implements OnInit, OnDestroy {
       },
     });
   }
+  getPIReviews():void{
+
+  }
 
   ngOnInit(): void {
     this.subscription = this.route.paramMap.subscribe((params) => {

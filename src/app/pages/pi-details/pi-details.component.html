@@ -14,10 +14,14 @@
         <p>{{ profileData?.description }}</p>
       </div>
     </div>
-    <div class="details-review-container">
-      <p>{{ profileData?.reviews }}</p>
-      <button routerLink="/investigator-list">Back</button>
+    <div
+      class="details-review-container"
+      *ngFor="let review of profileData?.reviews"
+    >
+      <p>{{ review.date }}</p>
+      <p>{{ review.reviewText }}</p>
     </div>
+    <button routerLink="/investigator-list">Back</button>
   </ng-container>
   <ng-template #errorScreen>
     <div class="success-message-container">
